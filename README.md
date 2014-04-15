@@ -1,4 +1,9 @@
-# MRF Cookie Cutter
+# cookiecutter-mfr
 
-##TODO
-* write me
+Get Started
+-----------
+
+```bash
+$ pip install cookiecutter
+$ cookiecutter https://github.com/chrisseto/cookiecutter-mfr.git
+```
