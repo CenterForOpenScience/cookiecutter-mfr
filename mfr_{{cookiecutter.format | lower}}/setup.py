@@ -44,7 +44,9 @@ def read(fname):
 setup(
     name='mfr_{{cookiecutter.format}}',
     version=__version__,
-    install_requires=['mfr'],
+    install_requires=[
+        'mfr==0.1.0'
+    ],
     description='{{cookiecutter.format}} support for mfr',
     long_description=read("README.rst"),
     author='{{cookiecutter.author}}',
