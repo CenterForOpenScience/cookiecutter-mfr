@@ -2,6 +2,8 @@
 
 from mfr.core import FileHandler, get_file_extension
 
+from mfr_{{ cookiecutter.format }}.render import render_html
+
 __version__ = '0.1.0'
 
 EXTENSIONS = [
@@ -12,8 +14,7 @@ EXTENSIONS = [
 class Handler(FileHandler):
     # Renderers and exporters are callables
     renderers = {
-        # TODO
-        # 'html': renderer
+        'html': render_html
     }
 
     def detect(self, fp):
