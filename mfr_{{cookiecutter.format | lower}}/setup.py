@@ -44,16 +44,16 @@ def read(fname):
 setup(
     name='mfr_{{cookiecutter.format}}',
     version=__version__,
-    description='HTML file renderer for Python',
+    description='{{cookiecutter.format}} support for mfr',
     long_description=read("README.rst"),
     author='{{cookiecutter.author}}',
     author_email='{{cookiecutter.author_email}}',
     url='https://github.com/{{cookiecutter.github_username}}/mfr_{{cookiecutter.format}}',
     packages=find_packages(exclude=("test*", 'previewer')),
     include_package_data=True,
-    # license=read("LICENSE"),
+    license=read("LICENSE"),
     zip_safe=False,
-    keywords='mfr',
+    keywords=['mfr', '{{cookiecutter.format}}'],
     classifiers=[
         'Development Status :: 2 - Pre-Alpha',
         'Intended Audience :: Developers',
@@ -65,11 +65,6 @@ setup(
         'Programming Language :: Python :: 3',
         'Programming Language :: Python :: 3.3',
     ],
-    entry_points={
-        'console_scripts': [
-            "mfr = mfr.cli:main"
-        ]
-    },
     test_suite='tests',
     tests_require=['pytest'],
     cmdclass={'test': PyTest}
