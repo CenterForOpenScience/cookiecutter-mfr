@@ -5,5 +5,5 @@ Get Started
 
 ```bash
 $ pip install cookiecutter
-$ cookiecutter https://github.com/chrisseto/cookiecutter-mfr.git
+$ cookiecutter https://github.com/CenterForOpenScience/cookiecutter-mfr.git
 ```
